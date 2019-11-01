@@ -1,0 +1,46 @@
+body{
+font-family: 'EB Garamond', serif;
+}
+
+.navbar{
+  background-color: blue;
+  color: white;
+  border: solid #013277ff 5px;
+  font-size: 20px;
+}
+
+.card-header{
+  border: solid #013277ff 2px;
+  background-color: #013277ff;
+  color: white;
+}
+
+.card{
+  margin: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.align-items-start{
+  background-color: #013277ff;
+  color: white;
+  height: 60px;
+}
+
+.btn-link{
+  color: white;
+}
+
+.btn-link: link, .btn-link: hover {
+  text-decoration: none;
+}
+
+.classInfo{
+  list-style-type: none;
+}
+
+.cartImg{
+  align-self: flex-end;
+  text-decoration: none;
+  color: white;
+}
