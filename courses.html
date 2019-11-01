@@ -60,9 +60,11 @@ courses.html-->
             </button>
           </h5>
           <div class='popover1'>
-            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="This course has successfully been added to your list of saved courses that you can add to your schedule via the schedule tab.">
-              <img src="images/cart.png" width="35" height="30" alt=""> Add Class
-            </button>
+            <a tabindex="0" class="btn btn-secondary" role="button"
+            data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+            data-content="This course has successfully been added to your saved courses
+            list. You can add it to your schedule via the schedule tab. Click anywhere
+            to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
           </div>
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -92,9 +94,12 @@ courses.html-->
               AFR 236-01: Introduction to African Politics with Chipo Dendre MR - 9:55 AM - 11:10 AM
             </button>
           </h5>
-          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="This course has successfully been added to your list of saved courses that you can add to your schedule via the schedule tab.">
-            <img src="images/cart.png" width="35" height="30" alt=""> Add Class
-          </button>
+          <div class='popover1'>
+            <a tabindex="0" class="btn btn-secondary" role="button"
+            data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+            data-content="This course has successfully been added to your saved courses
+            list. You can add it to your schedule via the schedule tab. Click anywhere
+            to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body">
@@ -135,9 +140,12 @@ courses.html-->
               AFR 239-01: Seminar: African Civilizations to 1700s with Liseli Fitzpatrick R - 2:20 PM - 5:00 PM
             </button>
           </h5>
-          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="This course has successfully been added to your list of saved courses that you can add to your schedule via the schedule tab.">
-            <img src="images/cart.png" width="35" height="30" alt=""> Add Class
-          </button>
+          <div class='popover1'>
+            <a tabindex="0" class="btn btn-secondary" role="button"
+            data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+            data-content="This course has successfully been added to your saved courses
+            list. You can add it to your schedule via the schedule tab. Click anywhere
+            to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
           <div class="card-body">
@@ -178,10 +186,13 @@ courses.html-->
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
 
-      <script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();
-});
-</script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+  </script>
   </body>
 </html>
