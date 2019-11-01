@@ -39,8 +39,9 @@ font-family: 'EB Garamond', serif;
   list-style-type: none;
 }
 
-.cartImg{
+.btn-secondary{
   align-self: flex-end;
   text-decoration: none;
   color: white;
+  background-color: #013277ff
 }
