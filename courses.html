@@ -51,8 +51,70 @@ courses.html-->
 
     <h1>Courses</h1>
 
-    <div id="accordion">
+    <div class="container dropContainer">
+      <h5 id='dropdownFilter'>Filters:</h5>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Department
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Africana Studies</a></li>
+          <li><a href="#">American Studies</a></li>
+          <li><a href="#">Anthropology</a></li>
+          <li><a href="#">Art</a></li>
+          <li><a href="#">Astronomy</a></li>
+          <li><a href="#">Biochemistry</a></li>
+        </ul>
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Africana Studies</a></li>
+          <li><a href="#">American Studies</a></li>
+          <li><a href="#">Anthropology</a></li>
+          <li><a href="#">Arabic</a></li>
+          <li><a href="#">Art History</a></li>
+          <li><a href="#">Art-Studio</a></li>
+        </ul>
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Faculty
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Aadnani, Rachid</a></li>
+          <li><a href="#">Abeberese Baafra</a></li>
+          <li><a href="#">Adhikari Prabal</a></li>
+          <li><a href="#">Agosin, Marjori</a></li>
+          <li><a href="#">Akahori, Eliko</a></li>
+          <li><a href="#">Anderson, Scott</a></li>
+        </ul>
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Major
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Africana Studies</a></li>
+          <li><a href="#">Anthropology</a></li>
+          <li><a href="#">Art</a></li>
+          <li><a href="#">Astronomy</a></li>
+          <li><a href="#">Biological Sciences</a></li>
+          <li><a href="#">Chemistry</a></li>
+        </ul>
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Meeting Times
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Monday</a></li>
+          <li><a href="#">Tuesday</a></li>
+          <li><a href="#">Wednesday</a></li>
+          <li><a href="#">Thursday</a></li>
+          <li><a href="#">Friday</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+
+    <div id="accordion">
       <div class="card">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
@@ -205,12 +267,6 @@ courses.html-->
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -223,14 +279,6 @@ courses.html-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
-
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
-      });
-      $('.popover-dismiss').popover({
-        trigger: 'focus'
-      })
-  </script>
+      <script src="script.js"></script>
   </body>
 </html>
