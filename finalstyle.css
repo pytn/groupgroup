@@ -15,12 +15,6 @@ font-family: 'EB Garamond', serif;
   color: white;
 }
 
-.card{
-  margin:25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .align-items-start{
   background-color: #013277ff;
   color: white;
@@ -39,8 +33,13 @@ font-family: 'EB Garamond', serif;
   list-style-type: none;
 }
 
+.popover1{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .btn-secondary{
-  align-self: flex-end;
+  align-self: flex-start;
   text-decoration: none;
   color: white;
   background-color: #013277ff
