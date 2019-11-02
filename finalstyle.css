@@ -21,14 +21,10 @@ font-family: 'EB Garamond', serif;
   margin: 20px;
 }
 
-.align-items-start{
-  background-color: #013277ff;
-  color: white;
-  height: 60px;
-}
-
 .btn-link{
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-link: link, .btn-link: hover {
