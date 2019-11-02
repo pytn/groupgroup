@@ -39,7 +39,7 @@ font-family: 'EB Garamond', serif;
   align-self: flex-start;
   text-decoration: none;
   color: white;
-  background-color: #013277ff
+  background-color: #013277ff;
 }
 
 .dropdown{
@@ -54,6 +54,20 @@ font-family: 'EB Garamond', serif;
   margin: 5px;
 }
 
+.btn-primary:hover{
+    background-color:#013277ff;
+    color: white;
+}
+
+.show>.btn-primary.dropdown-toggle{
+  background-color:#013277ff;
+  color: white;
+}
+
 #dropdownFilter{
   text-align: center;
+}
+
+.topTitle{
+  margin-left: 10px;
 }
