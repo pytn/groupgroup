@@ -41,3 +41,19 @@ font-family: 'EB Garamond', serif;
   color: white;
   background-color: #013277ff
 }
+
+.dropdown{
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-toggle{
+  display: inline-block;
+  background-color: grey;
+  border: 0px;
+  margin: 5px;
+}
+
+#dropdownFilter{
+  text-align: center;
+}
