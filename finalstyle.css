@@ -89,3 +89,16 @@ margin: 20px;
   display: inline-block;
   font-size: 16px;
 }
+
+.majContain{
+  margin: 10px;
+}
+
+.reqBut{
+  background-color: #013277ff;
+  border: none;
+  color: white;
+  text-align: left;
+  height: 60px;
+  border: solid white 6px;
+}
