@@ -96,9 +96,13 @@ margin: 20px;
 
 .reqBut{
   background-color: #013277ff;
-  border: none;
   color: white;
   text-align: left;
-  height: 60px;
+  height: flex;
   border: solid white 6px;
+  font-size: 18px;
+}
+
+.col-4{
+  padding: 0px;
 }
