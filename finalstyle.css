@@ -98,11 +98,15 @@ margin: 20px;
   background-color: #013277ff;
   color: white;
   text-align: left;
+  width: auto;
   height: flex;
   border: solid white 6px;
   font-size: 18px;
 }
 
-.col-4{
-  padding: 0px;
+#accordion{
+  width: auto;
+  position: absolute;
+  right: 0px;
+  top: 175px;
 }
