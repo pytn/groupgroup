@@ -50,18 +50,18 @@ major.html-->
 
 
     <h1 class='topTitle'>Major Classes</h1>
-    <h4>Major: English -- You need 8 more credits to finish the major</h4>
+    <h4 class='topTitle'>Major: English -- You need 2 more credits to finish the major: a Shakespeare course and a 300 level course</h4>
 
     <div class="clearfix">
-      <div class="column menu">
+      <div id='buttonBoi' class="column menu">
         <ul>
-          <li class='reqClasses'>All courses for major</li>
-          <li class='reqIntroClass'>Req: Introductory Courses</li> <!--Finished -->
-          <li class='reqShakes'>Req: Shakespeare Courses</li>
-          <li class='req1900'>Req: Two Pre-1900 Courses</li> <!--Finished -->
-          <li class='req1800'>Req: Pre-1800 Courses</li> <!--Finished -->
-          <li class='nonWhiteClass'>Req: Post-colonial, minority, or ethnic writing</li> <!--Finished -->
-          <li class='req300'>Req: Two 300 level Courses</li> <!--Finished -->
+          <li><button onclick= "filterCourse('HeadingOne')" id='reqClasses' class='reqButton'>All courses for major</button></li>
+          <li><button onclick= "filterCourse('')" id='reqIntroClass' class='reqButton'>Req: Introductory Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingFour')" id='reqShakes' class='reqButton'>Req: Shakespeare Courses</button></li>
+          <li><button onclick= "filterCourse('')" id='req1900' class='reqButton'>Req: Two Pre-1900 Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('')" id='req1800' class='reqButton'>Req: Pre-1800 Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('')" id='nonWhiteClass' class='reqButton'>Req: Post-colonial, minority, or ethnic writing</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingFive')" id='req300' class='reqButton'>Req: Two 300 level Courses</button></li> <!--Finished -->
         </ul>
       </div>
 
@@ -96,7 +96,7 @@ major.html-->
                 requirement
               </div>
               <ul class='classInfo'>
-                <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60; </li>
+                <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60</li>
                 <li>Meeting Time(s): MR - 11:20 AM - 12:35 PM</li>
                 <li>Distributions: LL - Language and Literature </li>
                 <li>Prerequisites(s): None</li>
@@ -135,7 +135,7 @@ major.html-->
                 Washington Square; Leo Tolstoy, The Death of Ivan Ilych, Master
                 and Man, Hadji Murad.
                 <ul class='classInfo'>
-                  <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60; </li>
+                  <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60</li>
                   <li>Meeting Time(s): MR - 9:55 AM - 11:10 AM </li>
                   <li>Distributions: LL - Language and Literature</li>
                   <li>Prerequisites(s): None.</li>
@@ -163,7 +163,7 @@ major.html-->
                 A workshop in the writing of short lyrics and the study of the
                 art and craft of poetry. Enrollment is limited to 15 students.
                 <ul class='classInfo'>
-                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15; </li>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15</li>
                   <li>Meeting Time(s): M - 3:45 PM - 6:25 PM </li>
                   <li>Distributions: LL - Language and Literature</li>
                   <li>Prerequisites(s): None.</li>
@@ -204,7 +204,7 @@ major.html-->
                  a midterm, and a final exam, and students will have the opportunity
                  to undertake creative and performance projects.
                 <ul class='classInfo'>
-                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15; </li>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15</li>
                   <li>Meeting Time(s): TF - 12:45 PM - 2:00 PM </li>
                   <li>Distributions: LL - Language and Literature; ARS - Visual Arts, Music, Theater, Film and Video</li>
                   <li>Prerequisites(s): None.</li>
@@ -243,7 +243,7 @@ major.html-->
                 prospective employer--and how to transmit your excitement about
                 the latest discoveries in your field to friends and parents.
                 <ul class='classInfo'>
-                  <li>Current Enrollment: 0; Seats Available: 12; Max Enrollment: 12;</li>
+                  <li>Current Enrollment: 0; Seats Available: 12; Max Enrollment: 12</li>
                   <li>Meeting Time(s): W - 2:30 PM - 5:10 PM</li>
                   <li>Distributions: LL - Language and Literature</li>
                   <li>Prerequisites(s): Open to all students who have taken at
@@ -301,6 +301,43 @@ major.html-->
             </div>
           </div> <!-- end most recent card -->
 
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  MER 314-01: The Global Middle Ages: Stories, Ideas, Communities with Laura Ingallinella TF - 9:55 AM - 11:10 AM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">
+                This course surveys literary artifacts from the Middle Ages,
+                focusing primarily on case studies that exemplify how medieval
+                men and women constructed, endorsed, or revolutionized their
+                perception of the world. We will explore key genres such as epic
+                poetry, history writing, religious texts, travelogues, lyric,
+                romance, narrative fiction, and theater. For each genre, we will
+                discuss texts written or translated in medieval England side by
+                side with counterparts originating in Africa, and Asia, and Europe.
+                Topics include the Song of Roland, John Mandeville’s Travels,
+                Barlaam and Iosaphat, the Letter of Prester John, and The Thousand
+                and One Nights.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 20; Max Enrollment: 20</li>
+                  <li>Meeting Time(s): TF - 9:55 AM - 11:10 AM</li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Crosslisted courses: ENG 314 01 - The Global Middle Ages: Stories, Ideas, Communities</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
 
         </div> <!-- accordion-->
       </div><!--End 'column content' -->
