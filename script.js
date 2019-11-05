@@ -1,6 +1,14 @@
 // Javascript for the ~pages~
 // CS220
 
+var courseAAFic = document.getElementById("headingOne");
+var courseSFic = document.getElementById("headingTwo");
+var coursePoetry = document.getElementById("headingThree");
+var courseShakes = document.getElementById("headingFour");
+var courseCalderwood = document.getElementById("headingFive");
+var courseEDick = document.getElementById("headingSix");
+var courseGlobalMA = document.getElementById("headingSeven");
+
 //Popover Code
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover();
@@ -34,4 +42,47 @@ function alertFunc(){
            i=i-1;
        }
    }
+}
+
+//show classes filters
+function filterCourse(id) {
+
+  if(id === 'headingFour'){
+    courseShakes.style.display='flex';
+    courseAAFic.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+    courseCalderwood.style.display = 'none';
+    courseEDick.style.display = 'none';
+    courseGlobalMA.style.display = 'none';
+  }else if (id === 'headingFive'){
+    courseCalderwood.style.display = 'flex';
+    courseEDick.style.display = 'flex';
+    courseGlobalMA.style.display = 'flex';
+    courseShakes.style.display='none';
+    courseAAFic.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+  }else if (id ===''){
+    courseShakes.style.display='none';
+    courseAAFic.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+    courseCalderwood.style.display = 'none';
+    courseEDick.style.display = 'none';
+    courseGlobalMA.style.display = 'none';
+
+    // var done = document.createElement("h1");
+    // done.innerHTML = "You've finished this requirement!";
+    // document.body.appendChild(done);
+
+  }else {
+    courseCalderwood.style.display = 'flex';
+    courseEDick.style.display = 'flex';
+    courseGlobalMA.style.display = 'flex';
+    courseShakes.style.display='flex';
+    courseAAFic.style.display = 'flex';
+    coursePoetry.style.display = 'flex';
+    courseSFic.style.display = 'flex';
+  }
 }
