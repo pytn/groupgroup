@@ -90,23 +90,46 @@ margin: 20px;
   font-size: 16px;
 }
 
-.majContain{
-  margin: 10px;
+* {
+  box-sizing: border-box;
 }
 
-.reqBut{
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+  background-color: white;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  font-size: 18px;
+  padding: 8px;
+  margin-bottom: 8px;
   background-color: #013277ff;
   color: white;
-  text-align: left;
-  width: auto;
-  height: flex;
   border: solid white 6px;
-  font-size: 18px;
 }
 
-#accordion{
-  width: auto;
-  position: absolute;
-  right: 0px;
-  top: 175px;
+.menu li:hover {
+  background-color: #0099cc;
 }
