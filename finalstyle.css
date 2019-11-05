@@ -133,3 +133,12 @@ margin: 20px;
 .menu li:hover {
   background-color: #0099cc;
 }
+
+.reqButton {
+  font-size: 18px;
+  background-color: #013277ff;
+  color: white;
+  border: none;
+  text-align: left;
+  width: auto;
+}
