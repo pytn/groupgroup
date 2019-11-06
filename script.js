@@ -8,6 +8,9 @@ var courseShakes = document.getElementById("headingFour");
 var courseCalderwood = document.getElementById("headingFive");
 var courseEDick = document.getElementById("headingSix");
 var courseGlobalMA = document.getElementById("headingSeven");
+var courseCritic1 = document.getElementById("headingEight");
+var courseCritic2 = document.getElementById("headingNine");
+var courseDarkEnlight = document.getElementById("headingTen");
 
 //Popover Code
 $(document).ready(function(){
@@ -47,7 +50,7 @@ function alertFunc(){
 //show classes filters
 function filterCourse(id) {
 
-  if(id === 'headingFour'){
+  if(id === 'headingFour'){ //Shakes class
     courseShakes.style.display='flex';
     courseAAFic.style.display = 'none';
     coursePoetry.style.display = 'none';
@@ -55,7 +58,10 @@ function filterCourse(id) {
     courseCalderwood.style.display = 'none';
     courseEDick.style.display = 'none';
     courseGlobalMA.style.display = 'none';
-  }else if (id === 'headingFive'){
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+    courseDarkEnlight.style.display = 'none';
+  }else if (id === 'headingFive'){ //300 Level Class
     courseCalderwood.style.display = 'flex';
     courseEDick.style.display = 'flex';
     courseGlobalMA.style.display = 'flex';
@@ -63,6 +69,20 @@ function filterCourse(id) {
     courseAAFic.style.display = 'none';
     coursePoetry.style.display = 'none';
     courseSFic.style.display = 'none';
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+    courseDarkEnlight.style.display = 'none';
+  }else if (id === 'headingTwo'){ //Intro Class
+    courseCritic1.style.display = 'flex';
+    courseCritic2.style.display = 'flex';
+    courseCalderwood.style.display = 'none';
+    courseEDick.style.display = 'none';
+    courseGlobalMA.style.display = 'none';
+    courseShakes.style.display='none';
+    courseAAFic.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+    courseDarkEnlight.style.display = 'none';
   }else if (id ===''){
     courseShakes.style.display = 'none';
     courseAAFic.style.display = 'none';
@@ -71,12 +91,43 @@ function filterCourse(id) {
     courseCalderwood.style.display = 'none';
     courseEDick.style.display = 'none';
     courseGlobalMA.style.display = 'none';
-
-    // var done = document.createElement("h1.finishMessage");
-    // done.innerHTML = "You've finished this requirement!";
-    // document.body.appendChild(done);
-
-  }else {
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+    courseDarkEnlight.style.display = 'none';
+  }else if (id ==='headingThree'){//Non white class
+    courseAAFic.style.display = 'flex';
+    courseShakes.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+    courseCalderwood.style.display = 'none';
+    courseEDick.style.display = 'none';
+    courseGlobalMA.style.display = 'none';
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+    courseDarkEnlight.style.display = 'none';
+  }else if (id ==='headingSix'){ //Pre1800
+    courseDarkEnlight.style.display = 'flex';
+    courseGlobalMA.style.display = 'flex';
+    courseAAFic.style.display = 'none';
+    courseShakes.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseSFic.style.display = 'none';
+    courseCalderwood.style.display = 'none';
+    courseEDick.style.display = 'none';
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+  }else if (id ==='headingSeven'){ //Pre1900
+    courseDarkEnlight.style.display = 'flex';
+    courseSFic.style.display = 'flex';
+    courseGlobalMA.style.display = 'flex';
+    courseEDick.style.display = 'flex';
+    courseAAFic.style.display = 'none';
+    courseShakes.style.display = 'none';
+    coursePoetry.style.display = 'none';
+    courseCalderwood.style.display = 'none';
+    courseCritic1.style.display = 'none';
+    courseCritic2.style.display = 'none';
+  }else if(id ==='headingOne'){ //All courses
     courseCalderwood.style.display = 'flex';
     courseEDick.style.display = 'flex';
     courseGlobalMA.style.display = 'flex';
@@ -84,5 +135,8 @@ function filterCourse(id) {
     courseAAFic.style.display = 'flex';
     coursePoetry.style.display = 'flex';
     courseSFic.style.display = 'flex';
+    courseCritic1.style.display = 'flex';
+    courseCritic2.style.display = 'flex';
+    courseDarkEnlight.style.display = 'flex';
   }
 }
