@@ -64,7 +64,7 @@ function filterCourse(id) {
     coursePoetry.style.display = 'none';
     courseSFic.style.display = 'none';
   }else if (id ===''){
-    courseShakes.style.display='none';
+    courseShakes.style.display = 'none';
     courseAAFic.style.display = 'none';
     coursePoetry.style.display = 'none';
     courseSFic.style.display = 'none';
@@ -72,7 +72,7 @@ function filterCourse(id) {
     courseEDick.style.display = 'none';
     courseGlobalMA.style.display = 'none';
 
-    // var done = document.createElement("h1");
+    // var done = document.createElement("h1.finishMessage");
     // done.innerHTML = "You've finished this requirement!";
     // document.body.appendChild(done);
 
