@@ -1,6 +1,7 @@
 // Javascript for the ~pages~
 // CS220
 
+//Major names
 var courseAAFic = document.getElementById("headingOne");
 var courseSFic = document.getElementById("headingTwo");
 var coursePoetry = document.getElementById("headingThree");
@@ -11,6 +12,19 @@ var courseGlobalMA = document.getElementById("headingSeven");
 var courseCritic1 = document.getElementById("headingEight");
 var courseCritic2 = document.getElementById("headingNine");
 var courseDarkEnlight = document.getElementById("headingTen");
+
+//DR Names
+var course1 = document.getElementById("headingOne2"); //LL
+var course2= document.getElementById("headingTwo2"); //EC and SBA
+var course3 = document.getElementById("headingThree2"); //LL
+var course4 = document.getElementById("headingFour2"); //HS and LL
+var course5= document.getElementById("headingFive2"); //HS and SBA
+var course6 = document.getElementById("headingSix2"); //LAB, MM, NPS
+var course7 = document.getElementById("headingSeven2"); //LAB, MM, NPS
+var course8 = document.getElementById("headingEight2"); //QRF and NPS
+var course9 = document.getElementById("headingNine2"); //QRB
+var course10 = document.getElementById("headingTen2"); //ARS
+var course11 = document.getElementById("headingEleven2"); //REP and ARS
 
 //Popover Code
 $(document).ready(function(){
@@ -31,7 +45,6 @@ $(document).ready(function(){
 });
 
 function alertFunc(){
-//  alert("Hello! You have successfully registered for:" + classString) //\nAMST 274 \nBISC 111 \nBISC 111-L01 \nAFR 211 \nCAMS 101
   //if checkbox is checked, remove it.
   var classString ='\n';
   var boxes = document.getElementsByClassName('chk');
@@ -47,8 +60,7 @@ function alertFunc(){
            i=i-1;
        }
    }
-   alert("Hello! You have successfully registered for:" + classString) //\nAMST 274 \nBISC 111 \nBISC 111-L01 \nAFR 211 \nCAMS 101
-
+   alert("Hello! You have successfully registered for:" + classString);
 }
 
 //show classes filters
@@ -142,5 +154,130 @@ function filterCourse(id) {
     courseCritic1.style.display = 'flex';
     courseCritic2.style.display = 'flex';
     courseDarkEnlight.style.display = 'flex';
+  }
+}
+
+function filterDR(id) {
+
+  if(id === 'one'){ //SBA
+    course1.style.display = 'none';
+    course2.style.display = 'flex';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'flex';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if (id === 'two'){ //LL
+    course1.style.display = 'flex';
+    course2.style.display = 'none';
+    course3.style.display = 'flex';
+    course4.style.display = 'flex';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if (id === 'three'){ //QRB
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'flex';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if (id ==='four'){ //ARS
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'flex';
+  }else if (id ==='five'){ //HS
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'flex';
+    course5.style.display = 'flex';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if (id ==='six'){ //REL
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'flex';
+  }else if (id ==='seven'){ //MM
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'flex';
+    course7.style.display = 'flex';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if(id ==='eight'){ //EC
+    course1.style.display = 'none';
+    course2.style.display = 'flex';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if(id ==='nine'){ //QRF
+    course1.style.display = 'none';
+    course2.style.display = 'none';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'none';
+    course7.style.display = 'none';
+    course8.style.display = 'flex';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
+  }else if(id ==='ten'){ //LAB
+    course1.style.display='flex';
+    course2.style.display='flex';
+    course3.style.display = 'none';
+    course4.style.display = 'none';
+    course5.style.display = 'none';
+    course6.style.display = 'flex';
+    course7.style.display = 'flex';
+    course8.style.display = 'none';
+    course9.style.display = 'none';
+    course10.style.display = 'none';
+    course11.style.display = 'none';
   }
 }
