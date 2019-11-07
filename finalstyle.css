@@ -19,7 +19,7 @@ font-family: 'EB Garamond', serif;
 
 .card{
   margin: auto;
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
 }
 
@@ -41,6 +41,7 @@ font-family: 'EB Garamond', serif;
   align-self: flex-start;
   text-decoration: none;
   color: white;
+  width: 150px;
   background-color: #013277ff;
 }
 
