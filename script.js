@@ -31,8 +31,9 @@ $(document).ready(function(){
 });
 
 function alertFunc(){
-  alert("Hello! You have successfully registered for:\n AMST 274 \nBISC 111 \nBISC 111-L01 \nAFR 211 \nCAMS 101")
+//  alert("Hello! You have successfully registered for:" + classString) //\nAMST 274 \nBISC 111 \nBISC 111-L01 \nAFR 211 \nCAMS 101
   //if checkbox is checked, remove it.
+  var classString ='\n';
   var boxes = document.getElementsByClassName('chk');
   var texts = document.getElementsByClassName('txt');
 
@@ -40,11 +41,14 @@ function alertFunc(){
        box = boxes[i];
        txt = texts[i];
        if(box.checked){
+         classString= classString + txt.innerHTML + '\n';
            box.parentNode.removeChild(box);
            txt.parentNode.removeChild(txt);
            i=i-1;
        }
    }
+   alert("Hello! You have successfully registered for:" + classString) //\nAMST 274 \nBISC 111 \nBISC 111-L01 \nAFR 211 \nCAMS 101
+
 }
 
 //show classes filters
