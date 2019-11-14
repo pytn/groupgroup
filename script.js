@@ -44,8 +44,8 @@ $(document).ready(function(){
   });
 });
 
+//Alerts for class registration
 function alertFunc(){
-  //if checkbox is checked, remove it.
   var classString ='\n';
   var boxes = document.getElementsByClassName('chk');
   var texts = document.getElementsByClassName('txt');
