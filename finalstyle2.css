@@ -45,35 +45,28 @@ font-family: 'EB Garamond', serif;
   background-color: #013277ff;
 }
 
-.formlabel.column{
-padding: 4px;
-}
-
-.formsection.column{
-padding: 2px;
-}
-
 .dropdown{
   width: 100%;
   text-align: center;
 }
 
-#searchBut{
+.dropdown-toggle{
   display: inline-block;
   background-color: grey;
   border: 0px;
-  margin-left: 5px;
+  margin: 5px;
 }
 
-#searchBut:hover{
+.searchBut{
+  display: inline-block;
+  background-color: grey;
+  border: 0px;
+  margin: 5px;
+}
+
+.btn-primary:hover{
     background-color:#013277ff;
     color: white;
-}
-
-.form-control{
-  width: 20%;
-  display: inline-block;
-  margin-right: 5px;
 }
 
 .show>.btn-primary.dropdown-toggle{
