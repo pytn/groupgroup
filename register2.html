@@ -1,0 +1,92 @@
+<!-- Registration Page
+register.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href='finalstyle2.css'>
+    <title>Wellesley Course Browser</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/wLogo.png" width="55" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="courses2.html">Courses <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="major2.html">Major Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dr2.html">Distribution Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedules2.html">Schedules</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="register2.html">Register</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          A. Student
+        </span>
+      </div>
+    </nav>
+
+    <h1 class='topTitle'>Register for classes!</h1>
+      <div class='wrapper'>
+
+        <div>
+          <input type="checkbox" id="afr211" class='chk' name="course">
+          <label for="afr211" class='txt'>AFR 211-01: Introduction to African Literature</label>
+        </div>
+        <div>
+          <input type="checkbox" id="afr243" class='chk' name="course">
+          <label for="afr243" class='txt'>AFR 243-01: The Black Church</label>
+        </div>
+        <div>
+          <input type="checkbox" id="bisc111" class='chk' name="course">
+          <label for="bisc111" class='txt'>CLSC 214-01: Evolution and Human Behavior</label>
+        </div>
+        <div>
+          <input type="checkbox" id="bisc111L1" class='chk' name="course">
+          <label for="bisc111L1" class='txt'>AMST 116-01: Asian-American Fiction</label>
+        </div>
+        <div>
+          <input type="checkbox" id="amst274" class='chk' name="course">
+          <label for="amst274" class='txt'>ENG 224-01: Shakespeare Part II: The Jacobean Period</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cams101" class='chk' name="course">
+          <label for="cams101" class='txt'>ENG 316-01 Calderwood Seminar in Public Writing: Dead Poetry Society</label>
+        </div>
+        <button onclick='alertFunc()' class='regButton'> Register with selected courses</button>
+      </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
