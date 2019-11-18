@@ -1,0 +1,480 @@
+<!-- Major requirements Page
+major.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href='finalstyle2.css'>
+    <title>Wellesley Course Browser</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images2/wLogo.png" width="55" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="courses2.html">Courses <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="major2.html">Major Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dr2.html">Distribution Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedules2.html">Schedules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register2.html">Register</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          A. Student
+        </span>
+      </div>
+    </nav>
+
+
+    <h1 class='topTitle'>Major Classes</h1>
+    <h4 class='topTitle'>Major: English -- You need 2 more credits to finish the major: a Shakespeare course and a 300 level course</h4>
+
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li><button onclick= "filterCourse('headingOne')" id='reqClasses' class='reqButton'>All courses for major</button></li>
+          <li><button onclick= "filterCourse('headingTwo')" id='reqIntroClass' class='reqButton'>Req: Introductory Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingFour')" id='reqShakes' class='reqButton'>Req: Shakespeare Courses</button></li>
+          <li><button onclick= "filterCourse('headingSeven')" id='req1900' class='reqButton'>Req: Two Pre-1900 Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingSix')" id='req1800' class='reqButton'>Req: Pre-1800 Courses</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingThree')" id='nonWhiteClass' class='reqButton'>Req: Post-colonial, minority, or ethnic writing</button></li> <!--Finished -->
+          <li><button onclick= "filterCourse('headingFive')" id='req300' class='reqButton'>Req: Two 300 level Courses</button></li> <!--Finished -->
+        </ul>
+      </div>
+
+      <div class="column content">
+        <div id="accordion">
+          <div class="card" id="headingOne">
+            <div class="card-header" >
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  AMST 116-01: Asian-American Fiction with Yoon Lee MR - 11:20 AM - 12:35 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body classSum">
+                At various times over the past century and a half, the American
+                nation has welcomed, expelled, tolerated, interned, ignored, and
+                celebrated immigrants from Asia and their descendants. This course
+                examines the fictions produced in response to these experiences.
+                Irony, humor, history, tragedy and mystery all find a place in
+                Asian American literature. We will see the emergence of a
+                self-conscious Asian American identity, as well as more recent
+                transnational structures of feeling. We will read novels and
+                short stories by writers including Jhumpa Lahiri, Ha Jin,
+                Le Thi Diem Thuy, Maxine Hong Kingston, Chang-rae Lee, and
+                Julie Otsuka. Fulfills the Diversity of Literatures in English
+                requirement
+              </div>
+              <ul class='classInfo'>
+                <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60</li>
+                <li>Meeting Time(s): MR - 11:20 AM - 12:35 PM</li>
+                <li>Distributions: LL - Language and Literature </li>
+                <li>Prerequisites(s): None</li>
+                <li>Crosslisted courses: ENG 116 01 - Asian American Fiction</li>
+                <li>Credit Hours: 1</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" id="headingTwo">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ENG 113-01: Studies in Fiction with Timothy Peltason MR - 9:55 AM - 11:10 AM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                A reading of some of the greatest novels of English, American,
+                and European literature, primarily from the 19th century. We
+                will move carefully together through these extraordinary works,
+                seeking to make their deep acquaintance through attentive, shared
+                reading and to add them to your own life storehouse of important
+                literary experiences. Taught primarily in lecture, this course
+                will not be writing-intensive. Designed especially for first-year
+                students and for non-majors, though all others are welcome. A
+                likely reading list: Jane Austen , Emma; Heinrich von Kleist,
+                The Marquise of O, An Earthquake in Chile; Gustave Flaubert,
+                Madame Bovary; Charles Dickens, Bleak House; Henry James,
+                Washington Square; Leo Tolstoy, The Death of Ivan Ilych, Master
+                and Man, Hadji Murad.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 60; Max Enrollment: 60</li>
+                  <li>Meeting Time(s): MR - 9:55 AM - 11:10 AM </li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingThree">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ENG 202-01: Poetry with Frank Bidart M - 3:45 PM - 6:25 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                A workshop in the writing of short lyrics and the study of the
+                art and craft of poetry. Enrollment is limited to 15 students.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15</li>
+                  <li>Meeting Time(s): M - 3:45 PM - 6:25 PM </li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Credit Hours: 1</li>
+                  <li>Notes: Mandatory credit/noncredit. Students who have taken
+                    this course once may register for it one additional time.</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingFour">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ENG 224-01: Shakespeare Part II: The Jacobean Period with Sarah Wall-Randell TF - 12:45 PM - 2:00 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                A close study of plays from the later half of Shakespeare’s career.
+                 We’ll read six plays:  Measure for Measure, Othello, King Lear,
+                 Pericles, The Winter's Tale, and The Tempest.  The focus, first
+                 and last, will be on the close, careful, and responsive reading
+                 of these plays, working out together a sense of the meaningful
+                 and memorable experiences that they offer us.  At the same time,
+                 recognizing that these great plays were written originally as
+                 scripts for performance, we will seek to learn about and to
+                 re-imagine their life on the stage, exploring their historical
+                 context, watching filmed versions of the plays, and attending at
+                 least one live performance. Evaluations will include two essays,
+                 a midterm, and a final exam, and students will have the opportunity
+                 to undertake creative and performance projects.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15</li>
+                  <li>Meeting Time(s): TF - 12:45 PM - 2:00 PM </li>
+                  <li>Distributions: LL - Language and Literature; ARS - Visual Arts, Music, Theater, Film and Video</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingFive">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  ENG 316-01: Calderwood Seminar in Public Writing: Dead Poetry Society with Kathryn Lynch W - 2:30 PM - 5:10 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                This Calderwood seminar in public writing will show that there is
+                no such thing as dead poetry. In a series of weekly writing and
+                editing exercises ranging from movie reviews to op-eds, we will
+                explore the many ways that the great poetry of centuries past
+                speaks directly to modern experience. We will be taught both by
+                the poets themselves (whose eloquence will rub off on us) and
+                each other, as each student will pick a poet whose writing she
+                will become expert at relaying to a lay audience. By the end of
+                the semester, not only will you be able to persuade a newspaper
+                reader that blank verse matters as much as Twitter; you will also
+                learn how to articulate the value of your English major to a
+                prospective employer--and how to transmit your excitement about
+                the latest discoveries in your field to friends and parents.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 12; Max Enrollment: 12</li>
+                  <li>Meeting Time(s): W - 2:30 PM - 5:10 PM</li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): Open to all students who have taken at
+                    least two literature courses in the department, at least one
+                    of which must be 200 level, or by permission of the instructor
+                    to other qualified students.</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingSix">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ENG 357-01: The World of Emily Dickinson with Dan P. Chiasson TF - 12:45 PM - 2:00 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                The poems and letters of Emily Dickinson, arguably the most
+                important American poet of the nineteenth century, provide a
+                window into one of the most thrilling and idiosyncratic minds in
+                literature. Dickinson lived her entire adult life in her family's
+                elegant home on the main street of Amherst, Massachusetts, writing
+                in her spacious bedroom through the night. The house and its views,
+                as well as its gardens and paths, are all vivid presences in her
+                work. Dickinson hand-wrote all of her poems on paper she scavenged
+                around the house; scholars are still debating how to read and
+                interpret her hand-done poems. To study Dickinson is to be
+                confronted with questions that seem sometimes more forensic than
+                literary critical. We will explore Dickinson's online archives
+                and visit, several times, her house and gardens in Amherst. This
+                course should appeal not only to lovers of poetry but to lovers of
+                old houses, scrapbooks, ghost stories, and the material history of
+                the New England region.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 20; Max Enrollment: 20</li>
+                  <li>Meeting Time(s): TF - 12:45 PM - 2:00 PM</li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): Open to all students who have taken at
+                    least two literature courses in the department, at least one
+                    of which must be 200 level, or by permission of the instructor
+                    to other qualified students.</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingSeven">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  MER 314-01: The Global Middle Ages: Stories, Ideas, Communities with Laura Ingallinella TF - 9:55 AM - 11:10 AM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">
+                This course surveys literary artifacts from the Middle Ages,
+                focusing primarily on case studies that exemplify how medieval
+                men and women constructed, endorsed, or revolutionized their
+                perception of the world. We will explore key genres such as epic
+                poetry, history writing, religious texts, travelogues, lyric,
+                romance, narrative fiction, and theater. For each genre, we will
+                discuss texts written or translated in medieval England side by
+                side with counterparts originating in Africa, and Asia, and Europe.
+                Topics include the Song of Roland, John Mandeville’s Travels,
+                Barlaam and Iosaphat, the Letter of Prester John, and The Thousand
+                and One Nights.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 20; Max Enrollment: 20</li>
+                  <li>Meeting Time(s): TF - 9:55 AM - 11:10 AM</li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Crosslisted courses: ENG 314 01 - The Global Middle Ages: Stories, Ideas, Communities</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingEight">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  ENG 120-01: Critical Interpretation with Lawrence Rosenwald MR - 11:20 AM - 12:35 PM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+              <div class="card-body">
+                English 120 introduces students to a level of interpretative
+                sophistication and techniques of analysis essential not just in
+                literary study but in all courses that demand advanced engagement
+                with language. In active discussions, sections perform detailed
+                readings of poetry drawn from a range of historical periods, with
+                the aim of developing an understanding of the richness and
+                complexity of poetic language and of connections between form and
+                content, text and cultural and historical context. The reading
+                varies from section to section, but all sections involve learning
+                to read closely and to write persuasively and elegantly. Required
+                of English majors and minors.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15; </li>
+                  <li>Meeting Time(s): MR - 11:20 AM - 12:35 PM </li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None. Primarily designed for, and required
+                    of, English majors. Ordinarily taken in first or sophomore year.</li>
+                  <li>Credit Hours: 1</li>
+                  <li>Notes: ENG 120 is also taught as part of the First-Year
+                    Writing program as WRIT 120. WRIT 120 satisfies both the
+                    First-Year Writing requirement and the Critical Interpretation
+                    requirement of the English major.</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingNine">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  ENG 120-02: Critical Interpretation with Dan P. Chiasson TF - 8:30 AM - 9:45 AM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+              <div class="card-body">
+                English 120 introduces students to a level of interpretative
+                sophistication and techniques of analysis essential not just in
+                literary study but in all courses that demand advanced engagement
+                with language. In active discussions, sections perform detailed
+                readings of poetry drawn from a range of historical periods, with
+                the aim of developing an understanding of the richness and
+                complexity of poetic language and of connections between form and
+                content, text and cultural and historical context. The reading
+                varies from section to section, but all sections involve learning
+                to read closely and to write persuasively and elegantly. Required
+                of English majors and minors.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 15; Max Enrollment: 15; </li>
+                  <li>Meeting Time(s): TF - 8:30 AM - 9:45 AM </li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None. Primarily designed for, and required
+                    of, English majors. Ordinarily taken in first or sophomore year.</li>
+                  <li>Credit Hours: 1</li>
+                  <li>Notes: ENG 120 is also taught as part of the First-Year
+                    Writing program as WRIT 120. WRIT 120 satisfies both the
+                    First-Year Writing requirement and the Critical Interpretation
+                    requirement of the English major.</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+          <div class="card" id="headingTen">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  ENG 234-01: Dark Side of Enlightenment with James Noggle MR - 9:55 AM - 11:10 AM
+                </button>
+              </h5>
+              <a tabindex="0" class="btn btn-secondary" role="button"
+              data-toggle="popover" data-trigger="focus" title="Course Added successfully"
+              data-content="This course has successfully been added to your saved courses
+              list. You can add it to your schedule via the schedule tab. Click anywhere
+              to close."> <img src="images/cart.png" width="35" height="30" alt=""> Add Class</a>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+              <div class="card-body">
+                The period known as the Enlightenment (roughly 1660-1789) promoted
+                individual rights, attacked superstition and advanced science,
+                dramatically expanded literacy and publishing, brought women as
+                readers and writers into a burgeoning literary marketplace, and
+                created the public sphere. Yet the era also massively increased
+                the trans-Atlantic slave trade, devised new forms of racism and
+                anti-feminism, and established European colonialism as a world
+                system. This course will examine British literature that confronts
+                these complexities. We’ll read novels like Behn’s Oroonoko, Defoe’s
+                Robinson Crusoe, and Swift’s Gulliver’s Travels that portray
+                encounters between Europeans and the non-European “Other”; poems
+                by Alexander Pope and Mary Wortley Montagu that explore the nature
+                of women and femininity; and texts that find the limits of
+                Enlightenment reason in uncertainty, strong passions, and madness.
+                <ul class='classInfo'>
+                  <li>Current Enrollment: 0; Seats Available: 30; Max Enrollment: 30; </li>
+                  <li>Meeting Time(s): MR - 9:55 AM - 11:10 AM </li>
+                  <li>Distributions: LL - Language and Literature</li>
+                  <li>Prerequisites(s): None.</li>
+                  <li>Credit Hours: 1</li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- end most recent card -->
+
+        </div> <!-- accordion-->
+      </div><!--End 'column content' -->
+    </div><!--End 'clear fix' -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
