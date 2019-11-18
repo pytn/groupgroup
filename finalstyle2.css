@@ -1,0 +1,145 @@
+body{
+font-family: 'EB Garamond', serif;
+}
+
+.navbar{
+  background-color: blue;
+  color: white;
+  border: solid #013277ff 5px;
+  font-size: 20px;
+}
+
+.card-header{
+  border: solid #013277ff 2px;
+  background-color: #013277ff;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card{
+  margin: auto;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.btn-link{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-link: link, .btn-link: hover {
+  text-decoration: none;
+}
+
+.classInfo{
+  list-style-type: none;
+}
+
+.btn-secondary{
+  align-self: flex-start;
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: #013277ff;
+}
+
+.dropdown{
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-toggle{
+  display: inline-block;
+  background-color: grey;
+  border: 0px;
+  margin: 5px;
+}
+
+.btn-primary:hover{
+    background-color:#013277ff;
+    color: white;
+}
+
+.show>.btn-primary.dropdown-toggle{
+  background-color:#013277ff;
+  color: white;
+}
+
+#dropdownFilter{
+  text-align: center;
+}
+
+.topTitle{
+  margin-left: 10px;
+}
+
+.wrapper{
+margin: 20px;
+}
+
+.regButton{
+  background-color: #013277ff;
+  border: none;
+  color: white;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+  background-color: white;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  font-size: 18px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #013277ff;
+  color: white;
+  border: solid white 6px;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.reqButton {
+  font-size: 18px;
+  background-color: #013277ff;
+  color: white;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
