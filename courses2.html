@@ -48,135 +48,76 @@ Code is altered from W3 schools-->
     </nav>
 
     <h1 class='topTitle'>Courses</h1>
+        <div class="container dropContainer">
+          <h5 id='dropdownFilter'>Filters:</h5>
+          <div class="dropdown">
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Department
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Africana Studies</a></li>
+                <li><a href="#">American Studies</a></li>
+                <li><a href="#">Anthropology</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Astronomy</a></li>
+                <li><a href="#">Biochemistry</a></li>
+              </ul>
+            </div>
 
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Africana Studies</a></li>
+                <li><a href="#">American Studies</a></li>
+                <li><a href="#">Anthropology</a></li>
+                <li><a href="#">Arabic</a></li>
+                <li><a href="#">Art History</a></li>
+                <li><a href="#">Art-Studio</a></li>
+              </ul>
+            </div>
 
-    <div class="form-group">
-      <label for="sel1">Department: </label>
-      <select class="form-control" id="sel1">
-        <option>ART</option>
-        <option>ARCH</option>
-        <option>FELL</option>
-        <option>PARTY</option>
-      </select>
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Faculty
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Aadnani, Rachid</a></li>
+                <li><a href="#">Abeberese Baafra</a></li>
+                <li><a href="#">Adhikari Prabal</a></li>
+                <li><a href="#">Agosin, Marjori</a></li>
+                <li><a href="#">Akahori, Eliko</a></li>
+                <li><a href="#">Anderson, Scott</a></li>
+              </ul>
+            </div>
 
-      <label for="sel1">Subject: </label>
-      <select class="form-control" id="sel1">
-        <option>FE</option>
-        <option>SDFH</option>
-        <option>WERS</option>
-        <option>ASDF</option>
-      </select>
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Major
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Africana Studies</a></li>
+                <li><a href="#">Anthropology</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Astronomy</a></li>
+                <li><a href="#">Biological Sciences</a></li>
+                <li><a href="#">Chemistry</a></li>
+              </ul>
+            </div>
 
-      <label for="sel1">Major: </label>
-      <select class="form-control" id="sel1">
-        <option>FE</option>
-        <option>SDFH</option>
-        <option>WERS</option>
-        <option>ASDF</option>
-      </select>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="container dropContainer">
-    <h5 id='dropdownFilter'>Filters:</h5>
-    <form method='post' name='classes' action>
-      <div id="filters" class='dropdown row'>
-
-        <div class="formlabel column" style="font-weight:bold;">Department:</div>
-        <div class='formsection column'>
-          <select id='semester' name='semester'>
-            <option value='0'> </option>
-            <option value='0'>Africana Studies</option>
-            <option value='0'>American Studies</option>
-            <option value='0'>Anthropology</option>
-            <option value='0'>Art</option>
-            <option value='0'>Astronomy</option>
-            <option value='0'>Biochemistry</option>
-            <option value='0'>Biological Sciences</option>
-          </select>
-        </div> <!--end form section-->
-        <div class="formlabel column" style="font-weight:bold;">Subject:</div>
-        <div class='formsection column'>
-          <select id='semester' name='semester'>
-            <option value='0'> </option>
-            <option value='0'>Africana Studies</option>
-            <option value='0'>American Studies</option>
-            <option value='0'>Anthropology</option>
-            <option value='0'>Arabic</option>
-            <option value='0'>Art History</option>
-            <option value='0'>Art-Studio</option>
-            <option value='0'>Biological Sciences</option>
-          </select>
-        </div> <!--end form section-->
-        <div class="formlabel column" style="font-weight:bold;">Major:</div>
-        <div class='formsection column'>
-          <select id='semester' name='semester'>
-            <option value='0'> </option>
-            <option value='0'>Africana Studies</option>
-            <option value='0'>Art</option>
-            <option value='0'>Astronomy</option>
-            <option value='0'>Biological Sciences</option>
-            <option value='0'>Chemistry</option>
-            <option value='0'>English</option>
-            <option value='0'>Environmental Sciences</option>
-          </select>
-        </div> <!--end form section-->
-        <div class="formlabel column" style="font-weight:bold;">Faculty:</div>
-        <div class='formsection column'>
-          <select id='semester' name='semester'>
-            <option value='0'> </option>
-            <option value='0'>Aadnani, Rachid</option>
-            <option value='0'>Abeberese Baafra</option>
-            <option value='0'>Adhikari Prabal</option>
-            <option value='0'>Agosin, Marjori</option>
-            <option value='0'>Akahori, Eliko</option>
-            <option value='0'>Anderson, Scott</option>
-          </select>
-        </div> <!--end form section-->
-        <div class="formlabel column" style="font-weight:bold;">Meeting Time:</div>
-        <div class='formsection column'>
-          <select id='semester' name='semester'>
-            <option value='0'> </option>
-            <option value='0'>Monday</option>
-            <option value='0'>Tuesday</option>
-            <option value='0'>Wednesday</option>
-            <option value='0'>Thursday</option>
-            <option value='0'>Friday</option>
-          </select>
-        </div> <!--end form section-->
-
-        <button id='searchBut' class="btn btn-primary" type="button">Search</button>
-
-      </div>
-    </form>
-  </div> <!-- End Filter Div-->
-
-
-
-      <div class="dropdown">
-        <input type="text" placeholder="Search..">
-      </div>
-
-
-
-
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Meeting Times
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Monday</a></li>
+                <li><a href="#">Tuesday</a></li>
+                <li><a href="#">Wednesday</a></li>
+                <li><a href="#">Thursday</a></li>
+                <li><a href="#">Friday</a></li>
+              </ul>
+            </div>
+            <input type="text" placeholder="Search..">
+            <button class="searchBut btn btn-primary" type="button">Search</button>
+          </div>
+        </div>
 
 
     <div id="accordion">
