@@ -27,7 +27,7 @@ var course10 = document.getElementById("headingTen2"); //ARS
 var course11 = document.getElementById("headingEleven2"); //REP and ARS
 
 //redoUndo signifier
-var on = 0;
+//var on = 0;
 var alt = 0;
 
 //Popover Code
@@ -51,18 +51,17 @@ $(document).ready(function(){
 
 //Button changing code
 function redoUndoClass(elm){
-var shopPic = document.createElement("IMG");
-shopPic.setAttribute("src", "images2/cart.png");
-shopPic.setAttribute("width", "35");
-shopPic.setAttribute("height", "30");
+  var shopPic = document.createElement("IMG");
+  shopPic.setAttribute("src", "images2/cart.png");
+  shopPic.setAttribute("width", "35");
+  shopPic.setAttribute("height", "30");
 
-  if (on === 0){ //button says Add Class
-    on = 1;
-    document.getElementById(elm).innerHTML = 'Remove Class';
+
+  if (document.getElementById(elm).innerHTML == 'Add Class <img id="cart" src="images2/cart.png" width="35" height="30" alt="">'){ //button says Add Class
+    document.getElementById(elm).innerHTML = 'Remove Class ';
     document.getElementById(elm).appendChild(shopPic);
-  }else if (on === 1){ //if button says Remove class
-    on = 0;
-    document.getElementById(elm).innerHTML = 'Add Class';
+  }else{ //if button says Remove class
+    document.getElementById(elm).innerHTML = 'Add Class ';
     document.getElementById(elm).appendChild(shopPic);
   }
 }
@@ -99,9 +98,7 @@ function addSched(){
     document.getElementById('schedBut').innerHTML = 'Add to Schedule';
     document.getElementById('bSched').src = "images2/blankSched.jpg";
   }
-
 }
-
 
 
 //show classes filters
