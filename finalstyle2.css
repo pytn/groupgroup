@@ -14,6 +14,7 @@ font-family: 'EB Garamond', serif;
   background-color: #013277ff;
   color: white;
   display: flex;
+  padding: 10px;
   justify-content: flex-end;
 }
 
@@ -161,5 +162,9 @@ margin: 20px;
 #schedClasses{
   display: inline-block;
   float: right;
+}
 
+.mb-0{
+  width: 75%;
+  float: left;
 }
