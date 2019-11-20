@@ -26,6 +26,9 @@ var course9 = document.getElementById("headingNine2"); //QRB
 var course10 = document.getElementById("headingTen2"); //ARS
 var course11 = document.getElementById("headingEleven2"); //REP and ARS
 
+//redoUndo signifier
+var on = 0;
+
 //Popover Code
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover();
@@ -43,6 +46,28 @@ $(document).ready(function(){
     });
   });
 });
+
+
+//Button changing code
+function redoUndoClass(elm){
+//set it to 0 or 1 and change the text accordingly
+var shopPic = document.createElement("IMG");
+shopPic.setAttribute("src", "images/cart.png");
+shopPic.setAttribute("width", "35");
+shopPic.setAttribute("height", "30");
+
+
+  if (on === 0){ //button says Add Class
+    on = 1;
+    document.getElementById(elm).innerHTML = 'Remove Class';
+    document.getElementById(elm).appendChild(shopPic);
+  }else if (on === 1){ //if button says Remove class
+    on = 0;
+    document.getElementById(elm).innerHTML = 'Add Class';
+    document.getElementById(elm).appendChild(shopPic);
+  }
+}
+
 
 //Alerts for class registration
 function alertFunc(){
