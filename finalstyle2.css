@@ -150,3 +150,16 @@ margin: 20px;
   border: none;
   text-align: left;
 }
+
+#schedBox{
+  border: solid black 2px;
+  width: 50%;
+  margin-left: 5px;
+  float: left;
+}
+
+#schedClasses{
+  display: inline-block;
+  float: right;
+
+}
