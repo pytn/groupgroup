@@ -28,6 +28,7 @@ var course11 = document.getElementById("headingEleven2"); //REP and ARS
 
 //redoUndo signifier
 var on = 0;
+var alt = 0;
 
 //Popover Code
 $(document).ready(function(){
@@ -50,12 +51,10 @@ $(document).ready(function(){
 
 //Button changing code
 function redoUndoClass(elm){
-//set it to 0 or 1 and change the text accordingly
 var shopPic = document.createElement("IMG");
-shopPic.setAttribute("src", "images/cart.png");
+shopPic.setAttribute("src", "images2/cart.png");
 shopPic.setAttribute("width", "35");
 shopPic.setAttribute("height", "30");
-
 
   if (on === 0){ //button says Add Class
     on = 1;
@@ -67,7 +66,6 @@ shopPic.setAttribute("height", "30");
     document.getElementById(elm).appendChild(shopPic);
   }
 }
-
 
 //Alerts for class registration
 function alertFunc(){
@@ -87,6 +85,24 @@ function alertFunc(){
    }
    alert("Hello! You have successfully registered for:" + classString);
 }
+
+//Add courses to schedule
+function addSched(){
+
+  if (alt === 0){ //button says Add Schedule
+    alt = 1;
+    document.getElementById('schedBut').innerHTML = 'Remove from Schedule';
+    document.getElementById('bSched').src = "images2/filledSched.jpg";
+
+  }else if (alt === 1){ //if button says Remove class
+    alt = 0;
+    document.getElementById('schedBut').innerHTML = 'Add to Schedule';
+    document.getElementById('bSched').src = "images2/blankSched.jpg";
+  }
+
+}
+
+
 
 //show classes filters
 function filterCourse(id) {
